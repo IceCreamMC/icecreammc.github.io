@@ -1,2 +1,2 @@
-# website
-IceCreamMC's Website!
+# Page
+
