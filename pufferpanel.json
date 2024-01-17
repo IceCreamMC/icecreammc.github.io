@@ -1,0 +1,104 @@
+{
+    "name": "IceCreamMC",
+    "display": "IceCreamMC - Minecraft",
+    "type": "minecraft-java",
+    "install": [
+      {
+        "type": "javadl",
+        "version": "${javaversion}"
+      },
+      {
+        "type": "download",
+        "files": [
+          "https://github.com/IceCreamMC/IceCream/releases/download/${build}/icecream-paperclip-${version}-R0.1-SNAPSHOT-reobf.jar"
+        ]
+      },
+      {
+        "type": "move",
+        "source": "icecream-paperclip-*-R0.1-SNAPSHOT-reobf.jar",
+        "target": "/home"
+      },
+      {
+        "type": "writefile",
+        "target": "server.properties",
+        "text": "server-ip=${ip}\nserver-port=${port}\nmotd=${motd}\n"
+      },
+      {
+        "type": "writefile",
+        "target": "eula.txt",
+        "text": "eula=${eula}"
+      }
+    ],
+    "run": {
+      "stop": "stop",
+      "command": "java${javaversion} -Xmx${memory}M -Dterminal.jline=false -Dterminal.ansi=true -Djline.terminal=jline.UnsupportedTerminal -Dlog4j2.formatMsgNoLookups=true -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar icecream.jar nogui",
+      "pre": [],
+      "post": [],
+      "environmentVars": {}
+    },
+    "data": {
+      "build": {
+        "display": "build",
+        "desc": "Build of IceCream to install (<a href='github.com/IceCreamMC/IceCream/releases</a>). Must be specified as a build number, e.g. 52",
+        "value": "52",
+        "type": "string",
+        "required": true
+      },
+      "eula": {
+        "display": "EULA Agreement (true/false)",
+        "type": "boolean",
+        "desc": "Do you agree to the Minecraft EULA?",
+        "value": "false",
+        "required": true
+      },
+      "ip": {
+        "display": "IP",
+        "desc": "What IP to bind the server to",
+        "type": "string",
+        "value": "0.0.0.0"
+      },
+      "javaversion": {
+        "required": true,
+        "display": "Java Version",
+        "desc": "Version of Java to use Example: 17",
+        "value": "17",
+        "type": "integer"
+      },
+      "memory": {
+        "required": true,
+        "display": "Memory/RAM (MB)",
+        "desc": "How much memory in MB to allocate to the Java Heap",
+        "type": "integer",
+        "value": "1024"
+      },
+      "motd": {
+        "required": true,
+        "display": "MOTD message of the day",
+        "desc": "This is the message that is displayed in the server list of the client, below the name. The MOTD does support <a href='https://minecraft.wiki/w/Formatting_codes' target='_blank'>color and formatting codes</a>.",
+        "value": "A IceCreamMC Minecraft Server\\n\\u00A79 hosted on PufferPanel",
+        "type": "string"
+      },
+      "port": {
+        "required": true,
+        "display": "Port",
+        "type": "integer",
+        "desc": "What port the server listens to.",
+        "value": "25565"
+      },
+      "version": {
+        "display": "Minecraft Version",
+        "type": "string",
+        "userEdit": true,
+        "desc": "Version of Minecraft to install (<a href='https://github.com/IceCreamMC/IceCream/releases'>IceCream maintained versions</a>). Must be specified as a release number, e.g. 1.20.4",
+        "value": "1.20.4"
+      }
+    },
+    "environment": {
+      "type": "standard"
+    },
+    "supportedEnvironments": [
+      {
+        "type": "standard"
+      }
+    ]
+  }
