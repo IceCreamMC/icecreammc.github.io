@@ -50,7 +50,20 @@ When migrating to IceCream from Vanilla, the way worlds are stored will automati
 Since Vanilla manages their worlds differently you will have to make some changes to not make IceCream make a new world.
 {% endhint %}
 
-| Server Software | Overworld                                                                                                                          | Nether                                                                                                                                          | End                                                                                                                                             |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Vanilla         | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world</code></td></tr></tbody></table> | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world/DIM-1</code></td></tr></tbody></table>        | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world/DIM1</code></td></tr></tbody></table>         |
-| IceCream        | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world</code></td></tr></tbody></table> | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world_nether/DIM-1</code></td></tr></tbody></table> | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world_the_end/DIM1</code></td></tr></tbody></table> |
+| Server Software            | Overworld                                                                                                                          | Nether                                                                                                                                          | End                                                                                                                                             |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Vanilla/Forge/Fabric/Quilt | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world</code></td></tr></tbody></table> | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world/DIM-1</code></td></tr></tbody></table>        | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world/DIM1</code></td></tr></tbody></table>         |
+| IceCream                   | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world</code></td></tr></tbody></table> | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world_nether/DIM-1</code></td></tr></tbody></table> | <p></p><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><br><code>/world_the_end/DIM1</code></td></tr></tbody></table> |
+
+
+
+
+
+### Migrating to IceCream From Forge, Quilt, Etc
+
+Because both Fabric and Forge use the same directory structure for world storage as Vanilla, follow the [Vanilla Migration Guide](migrating.md#migrating-to-icecream-from-vanilla) for this process. Note that neither Fabric nor Forge will support IceCream plugins! You will be required to find replacement mods.
+
+{% hint style="warning" %}
+If You Had Mods That Add Custom Blocks,Entities or Items you will have to reset your world.
+{% endhint %}
+
