@@ -67,3 +67,11 @@ Because both Fabric and Forge use the same directory structure for world storage
 If You Had Mods That Add Custom Blocks,Entities or Items you will have to reset your world.
 {% endhint %}
 
+
+
+### From a fork with Linear Region Format
+
+Since we don't have a converter (Think about adding one) you gotta reset your world unless you have the bravery to reset it yourself
+
+
+
