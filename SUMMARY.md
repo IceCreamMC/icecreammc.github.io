@@ -2,9 +2,17 @@
 
 * [Home](README.md)
 
-## icecream
+## 📁 installation
 
-* [Installation](icecream/installation.md)
-* [Migrating](icecream/migrating.md)
-* [For Developer's](icecream/for-developers.md)
-* [Running Your Server](icecream/running-your-server.md)
+* [Installation](installation/installation.md)
+* [Migrating](installation/migrating.md)
+
+## 🖥 developers
+
+* [Contributing](developers/contributing.md)
+* [For Developer's](developers/for-developers.md)
+
+## 📔 Guides
+
+* [Configuration](guides/configuration.md)
+* [Running Your Server](guides/running-your-server.md)
