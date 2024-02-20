@@ -43,7 +43,7 @@ javac 16.0.2
 
 IceCream is mostly patches and extensions to Purpur/Paper/Spigot. These patches/extensions are split into different directories which target certain parts of the code. These directories are:
 
-* `IceCream-API` - Modifications to `Purpur-API`;
+* `IceCream-API` - Modifications to `Canvas-API`;
 * `IceCream-Server` - Modifications to `IceCream`.
 
 Because the entire structure is based on patches and git, a basic understanding of how to use git is required. A basic tutorial can be found here: [https://git-scm.com/docs/gittutorial](https://git-scm.com/docs/gittutorial).
