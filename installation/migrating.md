@@ -44,7 +44,9 @@ When migrating to IceCream from Vanilla, the way worlds are stored will automati
 4. Edit your start.bat/sh (if you have), replace your old jar name to IceCream jar name (such as icecream-paperclip-1.20.4-R0.1-SNAPSHOT-reobf.jar).
 5. Start and enjoy your new IceCream server!
 
-
+{% hint style="success" %}
+Fun Fact: PaperMC, Purpur, Spigot, Bukkit and other forks based on them use the same world folder formats!
+{% endhint %}
 
 {% hint style="info" %}
 Since Vanilla manages their worlds differently you will have to make some changes to not make IceCream make a new world.
