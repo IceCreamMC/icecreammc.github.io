@@ -7,7 +7,7 @@
 * [Installation](installation/installation.md)
 * [Migrating](installation/migrating.md)
 
-## 🖥 developers
+## 🖥️ developers
 
 * [Contributing](developers/contributing.md)
 * [For Developer's](developers/for-developers.md)

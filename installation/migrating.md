@@ -29,7 +29,7 @@ It's easy to migrate from CraftBukkit, Spigot or Paper to IceCream. Follow the s
 IceCream retains full compatibility with all Paper/Spigot plugins, allowing a seamless transition.
 
 {% hint style="info" %}
-Your new IceCream server will still use `bukkit.yml`, `spigot.yml`, `config/paper-global.yml, purpur.yml, pufferfish.yml, sharkur.yml` and paper world configuration, only adding new configuration options in `icecream.yml`.
+Your new IceCream server will still use `bukkit.yml`, `spigot.yml`, `config/paper-global.yml, purpur.yml, pufferfish.yml, canvas.yml` and paper world configuration, only adding new configuration options in `icecream.yml`.
 {% endhint %}
 
 ### Migrating to IceCream from Vanilla
@@ -71,7 +71,7 @@ If You Had Mods That Add Custom Blocks,Entities or Items you will have to reset 
 
 ### From a fork with Linear Region Format
 
-Since we don't have a converter (Think about adding one) you gotta reset your world unless you have the bravery to reset it yourself
+Since We Dont Got Any Kind of Converter from linear to anvil you will need to reset your world but the installation process is the same as [#migrating-to-icecream-from-paper-spigot-purpur-etc](migrating.md#migrating-to-icecream-from-paper-spigot-purpur-etc "mention")
 
 
 
