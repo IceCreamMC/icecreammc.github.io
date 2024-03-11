@@ -16,3 +16,7 @@
 
 * [Configuration](guides/configuration.md)
 * [Running Your Server](guides/running-your-server.md)
+
+## 🌐 Other
+
+* [FAQ](other/faq.md)
